@@ -62,11 +62,7 @@ header>p{
     padding: 0 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.678);
 }
-@media(max-width:800px){
-    p{
-        display: block;
-    }
-}
+
 nav{
     background-color: var(--cor5);
     padding: 10px;
@@ -188,4 +184,19 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color: var(--cor1);
+}
+
+@media (max-width:800px){
+    nav>a{
+        display: block;
+    }
+    aside>ul{
+        columns: 1;
+        text-indent: 50px;
+    }
+    @media(max-width:600px){
+        nav>a{
+            text-align: center;
+        }
+    }
 }
